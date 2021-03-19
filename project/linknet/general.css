@@ -1,0 +1,543 @@
+/* Navbar LinkNet CSS Here */
+
+@import url("aset/dev/linknet-navbar.css");
+
+/* -- */
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
+    overflow-x: hidden;
+}
+
+@media (min-width: 1200px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1225px;
+    }
+}
+
+.linknet_navbar {
+    background: transparent;
+    transition: top 0.3s;
+    /* Transition effect when sliding down (and up) */
+    transition: transform 300ms;
+}
+
+.linknet_navbar_hide {
+    transform: translateY(-60px);
+}
+
+.linknet_navbar a.nav-link {
+    color: white;
+}
+
+.linknet_navbar .nav-item {
+    font-size: 14px;
+}
+
+.navbar-brand.linknet_logo img {
+    width: 125px;
+}
+
+
+/* breakpoint and up - mega dropdown styles */
+
+@media screen and (min-width: 992px) {
+    /* remove the padding from the navbar so the dropdown hover state is not broken */
+    .linknet_navbar {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+    .linknet_navbar .nav-item {
+        margin: 0 .25rem;
+    }
+}
+
+.cover {
+    background: linear-gradient(180deg, #000000 0%, rgba(82, 82, 82, 0) 100%), url(https://c0.wallpaperflare.com/preview/493/826/539/indonesia-jakarta-sudirman-central-bussiness-district-scbd-night.jpg), #C4C4C4;
+    background-size: cover;
+    /* min-height: 50rem; */
+    /* height: auto; */
+    border-radius: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.btn-cover-linknet {
+    border-radius: 5px !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.linknet-cover-content {
+    padding-top: 125px !important;
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 185px !important;
+}
+
+.linknet_headline {
+    font-style: normal;
+    font-weight: 600 !important;
+    line-height: 45px;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.linknet_subhead {
+    font-style: normal;
+    font-weight: 1;
+    font-size: 16px;
+    color: #E8E8E8;
+}
+
+.swiper-kegiatan {
+    margin-top: -140px;
+    margin-bottom: 20px;
+}
+
+.swiper-kegiatan .swiper-button-prev {
+    /* left: calc(100% - 860px); */
+    left: -20px;
+    position: relative;
+    right: auto;
+}
+
+.swiper-kegiatan .swiper-button-next {
+    left: auto;
+    right: -20px;
+    position: relative;
+}
+
+.swiper-kegiatan .swiper-button-next,
+.swiper-kegiatan .swiper-button-prev {
+    position: absolute;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1);
+    top: 50%;
+    width: 35px !important;
+    height: 35px !important;
+    margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black !important;
+    padding: 21px;
+    background: white;
+    border-radius: 50%;
+}
+
+.swiper-kegiatan .swiper-button-next:after,
+.swiper-kegiatan .swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: 18px;
+    text-transform: none!important;
+    letter-spacing: 0;
+    text-transform: none;
+    font-variant: initial;
+    line-height: 1;
+}
+
+.item-banner {
+    height: 325px !important;
+    width: 100%;
+    background-size: cover !important;
+    border-radius: 10px;
+}
+
+.swiper-wrapper {
+    /* width: 73.8%; */
+    will-change: transform;
+}
+
+.swiper-slide {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-image {
+    /* /* transform: scale3d(1.3, 1.3, 1);  */
+    /* backface-visibility: hidden; */
+    /* will-change: transform; */
+    transition: transform 1400ms ease;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    height: 100%;
+    width: 100%;
+    background-position: center !important;
+}
+
+.swiper-slide.swiper-slide-active .slide-image,
+.swiper-slide-duplicate-active .slide-image {
+    transform: scale3d(1, 1, 1);
+}
+
+.banner-content {
+    position: absolute;
+    bottom: 12%;
+    left: 0;
+    width: 55%;
+    padding-left: 5%;
+    color: #fff;
+}
+
+.banner-content .banner-category {
+    font-size: .85em;
+    font-weight: 400;
+    letter-spacing: 0.07em;
+    margin-bottom: 2px;
+    color: #FDB415;
+    text-transform: uppercase;
+}
+
+.banner-content .banner-title {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.banner-content .banner-caption {
+    display: block;
+    font-size: 13px;
+    /* line-height: 1.4; */
+}
+
+.banner-caption i {
+    font-size: 17px;
+    color: #EA2F36;
+    margin-right: 5px;
+}
+
+.jarallax {
+    position: relative;
+    z-index: 0;
+}
+
+.jarallax>.jarallax-img {
+    position: absolute;
+    object-fit: cover;
+    /* support for plugin https://github.com/bfred-it/object-fit-images */
+    font-family: 'object-fit: cover;';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.is-hidden {
+    opacity: 0;
+    transition: transform 0.4s, opacity 0.2s;
+}
+
+.is-visible {
+    opacity: 1;
+    transition: transform 0.4s, opacity 0.2s;
+}
+
+
+/* ################################### */
+
+
+/* SECTION LINKNET */
+
+.linknet-section a {
+    text-decoration: none !important;
+}
+
+.linknet-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.linknet-section .content {
+    margin-top: 50px;
+}
+
+.linknet-section .header .main-text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.linknet-section .header .main-text:before {
+    content: "";
+    background: #fdb415;
+    display: block;
+    width: 50px;
+    height: 5px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.linknet-section .header .desc-text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.linknet-section .header .more a {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FDB415;
+}
+
+.linknet-section .content .thumb-img {
+    margin-bottom: 15px;
+}
+
+.linknet-section .content .thumb-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.linknet-section .content .thumb-text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333333;
+    text-align: center;
+}
+
+
+/* EVENT */
+
+#home-event {
+    background: #f4f4f4;
+}
+
+#home-event .item-event {
+    background: white;
+    box-shadow: 0 20px 80px rgb(56 46 46 / 10%);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#home-event .item-event .event-img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#home-event .item-event .event-kategori {
+    display: inline-block;
+    background: #e9eaea;
+    padding: 5px 15px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #999999;
+    margin-bottom: 10px;
+}
+
+#home-event .item-event .event-name {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+#home-event .item-event .event-date,
+#home-event .item-event .event-time {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+#home-event .item-event .event-note {
+    margin-bottom: 25px;
+}
+
+#home-event .item-event .event-cta a {
+    padding: 10px 25px !important;
+    border-radius: 10px;
+    background: #FDB415;
+    color: white;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+/* CSR */
+
+.linknet-section.csr {
+    color: white !important;
+    background: black;
+}
+
+.linknet-section .header .main-text.csr {
+    color: white;
+}
+
+.linknet-section .header .desc-text.csr {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+}
+
+.linknet-section .header .desc-text.csr1 {
+    color: white;
+}
+
+.linknet-section .content .csr-img {
+    margin-bottom: 10px;
+}
+
+.linknet-section .content .csr-img img {
+    width: 100%;
+}
+
+.linknet-section .content .csr-text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+}
+
+
+/* RECENT */
+
+#home-recent {
+    background: #f4f4f4;
+}
+
+#home-recent .card-recent {
+    width: 100% !important;
+    border-radius: 0 !important;
+    height: 450px;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+#home-recent .card-recent .card-recent-img {
+    border-radius: 0 !important;
+    background-position: center !important;
+    height: 275px;
+    background: transparent;
+    background-size: cover !important;
+}
+
+#home-recent .card-recent .recent-body .card-text {
+    font-family: Poppins;
+    font-weight: 600 !important;
+    font-style: normal;
+    font-size: 16px;
+    color: #333333;
+}
+
+#home-recent .card-recent .recent-text-body {
+    letter-spacing: .3px;
+    font-weight: 600 !important;
+}
+
+#home-recent .card-recent .card-footer {
+    font-family: Poppins;
+    border-top: 0 !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #333333;
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+
+#home-recent .card-recent .card-footer .recent-category {
+    color: #DC1F26;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#home-recent .card-recent .card-footer .recent-category.csr {
+    color: #2ecc71;
+}
+
+#home-recent .card-recent .card-footer .recent-date {
+    color: #9e9fb4;
+    font-weight: 400;
+}
+
+
+/* ############### */
+
+
+/* FOOTER */
+
+.linknet-footer .widget-ln .widget-title,
+.linknet-footer .widget-ln .list-inline-item {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px !important;
+}
+
+.linknet-footer .widget-ln .widget-title {
+    font-weight: 600;
+    color: #333333;
+}
+
+.linknet-footer .widget-office {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.linknet-footer .widget-office .widget-title {
+    font-size: 14px;
+}
+
+.linknet-footer .widget-office .item-location {
+    margin-bottom: 10px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #606060;
+}
+
+.linknet-footer .widget-office .contact {
+    text-transform: uppercase;
+    font-family: Poppins;
+    font-style: normal;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+footer .social-media .widget-title {
+    font-family: Poppins;
+    font-style: normal;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 6 00;
+}
+
+footer .social-media img {
+    height: 45px;
+    margin-right: 10px;
+}

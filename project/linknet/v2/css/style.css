@@ -1,0 +1,82 @@
+.hero-item {
+    position: relative;
+    overflow: hidden;
+    padding: 0 5%;
+    width: 100%;
+}
+.hero-item:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-bottom: 20.875%;
+}
+.hero-item:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-bottom: 20.875%;
+}
+@media screen and (min-width: 1084px) {
+    .hero-item:before {
+        padding-bottom: 30%;
+    }
+    .hero-item:before {
+        padding-bottom: 30%;
+    }
+}
+.hero-item>div {
+    width: 88%;
+    height: 100%;
+    max-width: 2048px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.hero-item picture {
+    display: block;
+}
+.hero-item>picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    overflow: hidden;
+    -ms-transform: scale(1.0125);
+    transform: scale(1.0125);
+}
+.hero-item picture {
+    display: block;
+}
+.hero-item>picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    overflow: hidden;
+    -ms-transform: scale(1.0125);
+    transform: scale(1.0125);
+}
+.hero-item[class*="f-mask"].theme-light>:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.hero-item>picture:after {
+    opacity: 1;
+}
+.hero-item>picture:after {
+    background: radial-gradient(circle at center left,#000,rgba(255,255,255,0) 80%);
+}

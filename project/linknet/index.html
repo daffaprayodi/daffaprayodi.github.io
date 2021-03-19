@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="LinkNet">
+    <meta name="keywords" content="FirstMedia, business, linknet">
+    <meta name="author" content="Dev FirstMedia">
+
+
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="v2/css/themes.css">
+    <link rel="stylesheet" href="linknet-navbar.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/iin1cib.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="v2/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+
+    <title>
+        LinkNet Revamp
+    </title>
+</head>
+
+<body>
+    <main class="page-wrapper">
+
+        <div class="cover jarallax">
+
+            <!-- Header -->
+            <header class="header navbar navbar-expand-lg navbar-dark navbar-floating navbar-sticky linknet-header" data-fixed-element>
+                <div class="navbar-search bg-light">
+                    <div class="container d-flex flex-nowrap align-items-center"><i class="ai-search fs-xl"></i>
+                        <input class="form-control form-control-xl navbar-search-field" type="text" placeholder="Search site">
+                        <div class="d-flex align-items-center"><span class="text-muted fs-xs d-none d-sm-inline">Close</span>
+                            <button class="btn-close p-2" type="button" data-bs-toggle="search"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container px-0 px-xl-3">
+
+                    <button class="navbar-toggler ms-n2 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu" aria-controls="primaryMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <a class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4" href="#" title="LinkNet">
+                        <img class="navbar-floating-logo d-none d-lg-block" src="v2/images/logo/Logo-LinkNet.png" alt="LinkNet">
+                        <img class="navbar-stuck-logo" src="v2/images/logo/Logo-LinkNet.png" alt="LinkNet">
+                        <img class="d-lg-none" src="v2/images/logo/Logo-LinkNet.png" alt="LinkNet">
+                    </a>
+                    <div class="d-flex align-items-center order-lg-3 ms-lg-auto">
+                        <div class="navbar-tool">
+                            <a class="navbar-tool-icon-box me-2" href="https://www.instagram.com/lifeatlinknet/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <!-- <a class="navbar-tool-icon-box me-2" href="" data-bs-toggle="search">
+                                <i class="ai-search"></i>
+                            </a> -->
+                        </div>
+                        <div class="dropdown ms-auto ms-md-0 me-3 d-none">
+                            <a class="topbar-link dropdown-toggle text-light" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="me-2" src="v2/images/flags/en.png" alt="English" width="20">EN
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end" style="margin: 0px;">
+                                <a class="dropdown-item" href="#">
+                                    <img class="me-2" src="v2/images/flags/en.png" alt="English" width="20">English
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img class="me-2" src="v2/images/flags/id.png" alt="Indonesia" width="20">Indonesia
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offcanvas offcanvas-collapse order-lg-2" id="primaryMenu">
+                        <div class="offcanvas-cap navbar-shadow">
+                            <h5 class="mt-1 mb-0">Menu</h5>
+                            <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About Us</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Overview</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="http://www.linknet.co.id/about-us/overview/corporate-info">Corporate Info</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="http://www.linknet.co.id/about-us/overview/corporate-overview">Corporate Overview</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="http://www.linknet.co.id/about-us/overview/milestone">Milestone</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="http://www.linknet.co.id/about-us/slug:group-structure">Group Structure</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Management</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="http://www.linknet.co.id/about-us/overview/management/board-of-commissioner">Board of Commisioner</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="http://www.linknet.co.id/about-us/overview/management/board-of-director">Board of Director</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="http://www.linknet.co.id/about-us/slug:audit-committee">Audit Committee</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="http://www.linknet.co.id/about-us/slug:nomination-remuneration-committee">Nomination & Remuneration Committee</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Business</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown">
+                                            <a class="dropdown-item" href="http://www.linknet.co.id/business-unit/internet-broadband">Internet Broadband</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item" href="http://www.linknet.co.id/business-unit/cable-tv">Cable TV</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item" href="http://www.linknet.co.id/business-unit/corporate-solution">Corporate Solution</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item" href="http://www.linknet.co.id/business-unit/tv-anywhere">TV Anywhere</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <!-- <li class="nav-item dropdown dropdown-mega">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Business</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-column dropdown-column-img bg-secondary" href="#" style="background-image: url('v2/images/menu-banner.jpg');"></a>
+                                        <div class="dropdown-column">
+                                            <a class="dropdown-item" href="http://www.linknet.co.id/business-unit/internet-broadband">Internet Broadband</a>
+                                            <a class="dropdown-item" href="http://www.linknet.co.id/business-unit/cable-tv">Cable TV</a>
+                                            <a class="dropdown-item" href="http://www.linknet.co.id/business-unit/corporate-solution">Corporate Solution</a>
+                                            <a class="dropdown-item" href="http://www.linknet.co.id/business-unit/tv-anywhere">TV Anywhere</a>
+                                        </div>
+                                    </div>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://ir.linknet.co.id/">Investor Relations</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Corporate Governance</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown">
+                                            <a class="dropdown-item" href="http://www.linknet.co.id/corporate-governance/corporate-governance-principle">Corporate Governance Principle</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item" href="http://www.linknet.co.id/corporate-governance/corporate-governance-guidance">Corporate Governance Guidance</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item" href="http://www.linknet.co.id/corporate-governance/corporate-governance-structure">Corporate Governance Structure</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item" href="http://www.linknet.co.id/corporate-governance/code-of-conduct">Code of Conduct</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item" href="http://www.linknet.co.id/corporate-governance/quality-of-service">Quality of Service</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item" href="http://www.linknet.co.id/corporate-governance/organization-structure">Organization Structures</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item" href="http://www.linknet.co.id/corporate-governance/board-committee-charters">Board &amp; Committee Charters</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Announcement</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="http://www.linknet.co.id/corporate-governance/gms-announcement">GMS Announcement</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="http://www.linknet.co.id/corporate-governance/emiten-announcement">Emiten Announcement</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="http://www.linknet.co.id/corporate-governance/public-expose-announcement">Public Expose Announcement</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Newsroom</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown">
+                                            <a class="dropdown-item" href="http://www.linknet.co.id/media-room/press-release/term">Press Release</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item" href="http://www.linknet.co.id/media-room/gallery/album/">Gallery</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Corporate Social Responsibility</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="http://www.linknet.co.id/nodes/nodes/view/type:corporate-social-responsibility/slug:corporate-social-responsibility-principle">CSR Principle</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="http://www.linknet.co.id/nodes/nodes/view/type:corporate-social-responsibility/slug:corporate-social-responsibility-program">CSR Programs</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://www.linknet.co.id/contact-us">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- END: Header -->
+
+            <div class="linknet-cover-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="linknet_headline">
+                                To be the first choice for broadband and media services
+                            </div>
+                            <div class="linknet_subhead mb-4">
+                                We transform live by providing innovative and exceptional broadband and media services and solution
+                            </div>
+
+                            <a href="http://www.linknet.co.id/about-us/overview/corporate-info" class="btn btn-danger btn-cover-linknet">About Us</a>
+                            <a href="https://medium.com/firstsquad" target="_blank" class="btn btn-outline-warning btn-cover-linknet" style="background: rgba(0, 0, 0, 0.75);">See First Squad Today</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner -->
+        <div class="container">
+            <!-- Swiper -->
+            <div class="swiper-kegiatan swiper-container" style="overflow: inherit;">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide item-banner slide-image">
+                        <!-- item-kegiatan -->
+                        <div class="slide-image" style="background: linear-gradient(360deg, #000000 12.01%, rgba(255, 255, 255, 0) 100%), url(aset/bg-banner.png)">
+                            <div class="banner-content">
+                                <div class="banner-category">OUR MISSION</div>
+                                <p class="banner-title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">We Make A Better Future For Indonesia</p>
+                                <!-- <span class="banner-caption" data-swiper-parallax="-20%"><i class="fas fa-play-circle"></i> Watch our video 3:48 Minutes</span> -->
+                            </div>
+                        </div>
+                        <!-- end-item-kegiatan -->
+                    </div>
+
+
+                    <a href="https://www.instagram.com/lifeatlinknet/" class="swiper-slide item-banner slide-image">
+                        <!-- item-kegiatan -->
+                        <div class="slide-image" style="background: linear-gradient(360deg, #000000 12.01%, rgba(255, 255, 255, 0) 100%), url(https://www.firstmedia.com/files/images/firstsquad/text/bg-intro2.jpg);background-position:center;">
+                            <div class="banner-content">
+                                <div class="banner-category">#FirstSquad</div>
+                                <p class="banner-title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Join First Squad, Start Your Journey</p>
+                                <span class="banner-caption" data-swiper-parallax="-20%"><i class="fas fa-chevron-circle-right"></i> Learn More</span>
+                            </div>
+                        </div>
+                        <!-- end-item-kegiatan -->
+                    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+
+        <section class="linknet-section d-none" id="business-unit">
+            <div class="container">
+                <div class="header">
+                    <div class="row">
+                        <div class="col-12 col-md-5">
+                            <div class="main-text">
+                                Business Unit
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <div class="desc-text">
+                                We have several products that are widely used by the <br> wider community in Indonesia
+                            </div>
+                            <div class="more">
+                                <!-- <a href="#">Learn more</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="thumb-img">
+                                    <img src="aset/img/business-unit/broadband.jpg" alt="">
+                                </div>
+                                <div class="thumb-text">
+                                    Internet Broadband
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="thumb-img">
+                                    <img src="aset/img/business-unit/broadband.jpg" alt="">
+                                </div>
+                                <div class="thumb-text">
+                                    Internet Broadband
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="thumb-img">
+                                    <img src="aset/img/business-unit/broadband.jpg" alt="">
+                                </div>
+                                <div class="thumb-text">
+                                    Internet Broadband
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="thumb-img">
+                                    <img src="aset/img/business-unit/broadband.jpg" alt="">
+                                </div>
+                                <div class="thumb-text">
+                                    Internet Broadband
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="thumb-img">
+                                    <img src="aset/img/business-unit/broadband.jpg" alt="">
+                                </div>
+                                <div class="thumb-text">
+                                    Internet Broadband
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="linknet-section" id="business-unit">
+            <div class="container">
+                <div class="header">
+                    <div class="row">
+                        <div class="col-12 col-md-5">
+                            <div class="main-text">
+                                Our Brand
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <div class="desc-text">
+                                We have several products that are widely used by the <br> wider community in Indonesia
+                            </div>
+                            <div class="more">
+                                <!-- <a href="#">Learn more</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <a href="https://www.firstmedia.com/" class="swiper-slide">
+                                <div class="thumb-img">
+                                    <img src="aset/img/logo/fm.jpg" alt="">
+                                </div>
+                                <div class="thumb-text">
+                                    First Media
+                                </div>
+                            </a>
+                            <a href="https://business.firstmedia.com/" class="swiper-slide">
+                                <div class="thumb-img">
+                                    <img src="aset/img/logo/fmb.jpg" alt="">
+                                </div>
+                                <div class="thumb-text">
+                                    First Media Business
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="linknet-section" id="home-event">
+            <div class="container">
+                <div class="header">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="main-text">
+                                Event Terbaru
+                            </div>
+                            <div class="desc-text">
+                                Ikuti event menarik dari LinkNet. Bekerja sama dengan Partner, kami menyelenggarakan acara untuk mendukung “Better Future For Indonesia”
+                            </div>
+                            <div class="more">
+                                <a href="https://www.instagram.com/lifeatlinknet/">See More</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="item-event">
+                                            <div class="row">
+                                                <div class="col-12 col-md-5">
+                                                    <div class="event-img">
+                                                        <img src="aset/img/event/event-1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-7">
+                                                    <div class="event-kategori">
+                                                        Webinar
+                                                    </div>
+                                                    <div class="event-name">
+                                                        Financial Planning for Millennials
+                                                    </div>
+                                                    <div class="event-note">
+                                                        <div class="event-date">
+                                                            Jumat, 26 Maret 2021
+                                                        </div>
+                                                        <div class="event-time">
+                                                            17.00 – 17.40 WIB
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-cta">
+                                                        <a href="https://www.instagram.com/lifeatlinknet/" target="_blank" class="btn">Follow @lifeatlinknet <i class="ai-instagram"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="linknet-section csr" id="home-csr">
+            <div class="container">
+                <div class="header">
+                    <div class="row">
+                        <div class="col-12 col-md-5">
+                            <div class="main-text csr">
+                                Corporate Social Responsibility Program
+                            </div>
+                            <!-- <div class="desc-text csr">
+                                Corporate Social Responsibility Program
+                            </div> -->
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <div class="desc-text csr1">
+                                The Company is committed to CSR best practice and we have a range of programs where we contribute including anti-drugs campaigning, the broadcasting of government television channels, scholarships, the building of houses of worship and blood donation.
+
+                            </div>
+                            <div class="more csr">
+                                <a href="http://www.linknet.co.id/nodes/nodes/view/type:corporate-social-responsibility/slug:corporate-social-responsibility-program">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <a href="https://www.firstmedia.com/news/first-media-gandeng-benihbaikcom-untuk-memberikan-jaringan-internet-gratis-bagi-sekolah-sekolah" target="_blank" class="item-csr swiper-slide">
+                                <div class="csr-img">
+                                    <img src="aset/img/csr/csr-1.jpg" alt="">
+                                </div>
+                                <div class="csr-text">
+                                    First Media Gandeng BenihBaik.com Untuk Memberikan Jaringan Internet Gratis bagi Sekolah-Sekolah
+                                </div>
+                            </a>
+                            <a href="https://www.firstmedia.com/news/first-media-peduli-tenaga-medis-kolaborasi-dukung-garda-terdepan-lawan-covid-19" target="_blank" class="item-csr swiper-slide">
+                                <div class="csr-img">
+                                    <img src="aset/img/csr/csr-2.jpg" alt="">
+                                </div>
+                                <div class="csr-text">
+                                    First Media Peduli Tenaga Medis Kolaborasi Dukung Garda Terdepan Lawan COVID-19
+                                </div>
+                            </a>
+                            <a href="https://www.firstmedia.com/article/first-media-menyediakan-layanan-broadband-internet-dan-tv-kabel-guna-dukung-produktivitas-peritel-umkm-indonesia" target="_blank" class="item-csr swiper-slide">
+                                <div class="csr-img">
+                                    <img src="aset/img/csr/csr-3.jpg" alt="">
+                                </div>
+                                <div class="csr-text">
+                                    First Media Menyediakan Layanan Broadband Internet dan TV Kabel Guna Dukung Produktivitas Peritel & UMKM Indonesia
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="linknet-section" id="home-recent">
+            <div class="container">
+                <div class="header">
+                    <div class="row">
+                        <div class="col-12 col-md-5">
+                            <div class="main-text">
+                                Recent Update
+                            </div>
+                            <!-- <div class="desc-text csr">
+                                Corporate Social Responsibility Program
+                            </div> -->
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <div class="desc-text">
+                                All information contains of the news about the events and activities organized by Link Net.
+                            </div>
+                            <div class="more">
+                                <a href="http://www.linknet.co.id/media-room/press-release/term">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <a href="https://ir.linknet.co.id/static-files/fcff6837-a2ee-4902-b258-cf7c855063c0" class="swiper-slide">
+                                <div class="card card-recent" style="width: 18rem;">
+                                    <div class="card-img-top card-recent-img" style="background:url('aset/img/press/default.png');"></div>
+                                    <div class="card-body recent-body recent-text-body">
+                                        <p class="card-text">Link Net 2020 Operational Results Press Release</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <span class="recent-category">
+                                            Press Release
+                                        </span> &nbsp; | &nbsp;
+                                        <span class="recent-date">
+                                            December 03, 2020
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.firstmedia.com/news/first-media-gandeng-benihbaikcom-untuk-memberikan-jaringan-internet-gratis-bagi-sekolah-sekolah" target="_blank" class="swiper-slide">
+                                <div class="card card-recent bg-dark text-white" style="background: linear-gradient(360deg, rgba(0, 0, 0, 0.85) 30.55%, rgba(255, 255, 255, 0) 100%), url('aset/img/csr/csr-1.jpg');">
+                                    <div class="card-img-top card-recent-img"></div>
+                                    <div class="card-body recent-text-body">
+                                        <p class="card-text">First Media Gandeng BenihBaik.com Untuk Memberikan Jaringan Internet Gratis bagi Sekolah-Sekolah</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <span class="recent-category csr">
+                                            CSR
+                                        </span> &nbsp; | &nbsp;
+                                        <span class="recent-date">
+                                            December 09, 2019
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://ir.linknet.co.id/static-files/998726b8-4d98-47d7-96e2-ec0b8cc13e20" class="swiper-slide">
+                                <div class="card card-recent" style="width: 18rem;">
+                                    <div class="card-img-top card-recent-img" style="background:url('aset/img/press/default.png');"></div>
+                                    <div class="card-body recent-body recent-text-body">
+                                        <p class="card-text">
+                                            Link Net 3Q2020 Press Release + PE - Bahasa</p>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <span class="recent-category">
+                                            Press Release
+                                        </span> &nbsp; | &nbsp;
+                                        <span class="recent-date">
+                                            Nov 06, 2020    
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer bg-light pt-5 pt-md-6 linknet-footer">
+        <div class="container pt-3 pb-0 pt-md-0 pb-md-3">
+            <div class="row mb-4">
+                <div class="col-md-8">
+                    <div class="widget-ln pb-2 mb-4">
+
+                        <div class="item-widget-ln">
+                            <div class="row">
+                                <div class="col-12 col-md-3">
+                                    <h4 class="widget-title">Usefull Link</h4>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <ul class="list-inline fs-sm pt-0 mb-0">
+                                        <li class="list-inline-item"><a class="nav-link-style  opacity-50" href="http://www.linknet.co.id/about-us/overview/corporate-overview">Corporate Overview</a></li>
+                                        <li class="list-inline-item"><a class="nav-link-style  opacity-50" href="http://ir.linknet.co.id/">Investor Relation</a></li>
+                                        <li class="list-inline-item"><a class="nav-link-style  opacity-50" href="http://www.linknet.co.id/about-us/overview/management/board-of-director">Management</a></li>
+                                        <li class="list-inline-item"><a class="nav-link-style  opacity-50" href="http://www.linknet.co.id/about-us/overview/awards">Awards</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-widget-ln">
+                            <div class="row">
+                                <div class="col-12 col-md-3">
+                                    <h4 class="widget-title">Announcement</h4>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <ul class="list-inline fs-sm pt-0 mb-0">
+                                        <li class="list-inline-item"><a class="nav-link-style  opacity-50" href="http://www.linknet.co.id/corporate-governance/gms-announcement">GMS Announcement</a></li>
+                                        <li class="list-inline-item"><a class="nav-link-style  opacity-50" href="http://www.linknet.co.id/corporate-governance/emiten-announcement">Emiten Announcement</a></li>
+                                        <li class="list-inline-item"><a class="nav-link-style  opacity-50" href="http://www.linknet.co.id/corporate-governance/gms-announcement">Public Expose Announcement</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-widget-ln">
+                            <div class="row">
+                                <div class="col-12 col-md-3">
+                                    <h4 class="widget-title">Report</h4>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <ul class="list-inline fs-sm pt-0 mb-0">
+                                        <li class="list-inline-item"><a class="nav-link-style  opacity-50" href="http://www.linknet.co.id/nodes/nodes/view/type:financial-statement/slug:financial-statement-link-net">Financial Statement</a></li>
+                                        <li class="list-inline-item"><a class="nav-link-style  opacity-50" href="http://www.linknet.co.id/nodes/nodes/view/type:annual-report/slug:annual-report">Annual Report</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="social-media">
+                        <div class="widget-title">Find & Follow Link Net On</div>
+                        <!--Linkedin-->
+                        <a class="btn-socialmedia" href="https://www.linkedin.com/company/ptlinknettbk" target="_blank"><img alt="" src="aset/img/social-media/linkedin.png"> </a>
+                        <!--Youtube-->
+                        <a class="btn-socialmedia" href="https://www.youtube.com/channel/UCdFgDPKPBTi_qOiGHo-A6FQ" target="_blank"> <img alt="" src="https://www.firstmedia.com/files/images/d/other/link-in-bio/aset/social/Youtube.png"> </a>
+                        <!--Instagram-->
+                        <a class="btn-socialmedia" href="https://www.instagram.com/lifeatlinknet/" target="_blank"> <img alt="" src="https://www.firstmedia.com/files/images/d/other/link-in-bio/aset/social/Instagram.png"> </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="widget widget-office pb-3 mb-4" style="max-width: 24rem;">
+                        <h3 class="widget-title">Office Location</h3>
+                        <div class="item-location">
+                            Centennial Tower 26th Floor, <br/>Jl. Jenderal Gatot Subroto Kav. 24-25, RT 002, RW 002, Jakarta 12930 - Indonesia
+                        </div>
+                        <div class="item-location">Graha Lippo 19th Floor, <br/>Jl. Boulevard Diponegoro No. 101. Lippo Village. Tangerang 15810, Banten - Indonesia</div>
+
+                        <div class="contact">
+                            <div class="item-contact">
+                                Phone: (62-21) 5278811
+                            </div>
+                            <div class="item-contact">
+                                Fax.: (62-21) 5278833
+                            </div>
+                        </div>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-darker pt-2" style="background-color:#F6F6F6 !important;">
+            <div class="container py-sm-3">
+                <!-- <div class="d-sm-flex align-items-center mb-0 pb-0">
+                    <div class="d-flex flex-wrap align-items-center me-3">
+                        <ul class="list-inline fs-sm pt-2 mb-1">
+                            <li class="list-inline-item"><a class="nav-link-style  opacity-50" href="#">Careers</a></li>
+                            <li class="list-inline-item"><a class="nav-link-style  opacity-50" href="#">Privacy Policy</a></li>
+                            <li class="list-inline-item"><a class="nav-link-style  opacity-50" href="#">Legal</a></li>
+                            <li class="list-inline-item"><a class="nav-link-style  opacity-50" href="#">Links</a></li>
+                            <li class="list-inline-item"><a class="nav-link-style  opacity-50" href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="d-sm-flex justify-content-between align-items-center pb-4 pb-sm-2">
+                    <div class="order-sm-1 mb-0">
+                        <p class="fs-ms mb-0"><span class=" me-1">© 1996 - 2021 PT Link Net Tbk. All Right Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="v2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+    <script src="linknet-navbar.js"></script>
+    <script src="v2/js/bootstrap.bundle.min.js"></script>
+    <script src="v2/js/script.min.js"></script>
+    <script src="linknet-js.js"></script>
+    <script src="v2/js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+    <script src="v2/js/smooth-scroll.polyfills.min.js"></script>
+
+
+    <script>
+        var swiper = new Swiper('.swiper-kegiatan', {
+
+            slidesPerView: 1,
+            effect: 'fade',
+            speed: 1000,
+            roundLengths: true,
+            mousewheel: false,
+            grabCursor: false,
+            autoplay: 500,
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 1,
+                },
+                1024: {
+                    slidesPerView: 1,
+
+
+                },
+            }
+
+        });
+    </script>
+
+
+
+    <script>
+         $(document).ready(function() {
+                                    $(".owl-carousel").owlCarousel();
+                                });
+
+        $('.jarallax').jarallax({
+            speed: 0.2
+        });
+    </script>
+
+    <script>
+        // var lastScrollTop = 0;
+        // $(window).scroll(function() {
+        //     var st = $(this).scrollTop();
+        //     var banner = $('.linknet_navbar');
+        //     setTimeout(function() {
+        //         if (st > lastScrollTop) {
+        //             banner.addClass('linknet_navbar_hide');
+        //             $('.linknet_navbar').css('background', 'transparent');
+
+        //             // navbar_hide_css();
+        //         } else {
+        //             banner.removeClass('linknet_navbar_hide');
+        //             $('.linknet_navbar').css('background', 'red');
+
+
+
+        //             // navbar_show_css();
+        //         }
+        //         lastScrollTop = st;
+
+        //     }, 100);
+        // });
+
+
+        // $(window).scroll(function() {
+        //     if ($(this).scrollTop() = 0) {
+        //         $('.linknet_navbar').css('background', 'transparent');
+        //     }
+        // });
+    </script>
+
+
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

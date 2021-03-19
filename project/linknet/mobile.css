@@ -1,0 +1,58 @@
+@media(max-width:700px) {
+    /* start */
+    .linknet-cover-content {
+        text-align: center;
+    }
+    .banner-content {
+        width: 95%;
+    }
+    .banner-content .banner-title {
+        font-size: 1.25em;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    .item-banner {
+        height: 425px !important;
+        background-position: center !important;
+    }
+    .linknet_headline {
+        line-height: 35px;
+        font-size: 25px;
+    }
+    .linknet-section .header .main-text {
+        font-size: 22px;
+    }
+    .linknet-section .header .desc-text {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .linknet-section .header .more a {
+        font-size: 14px;
+    }
+    .item-event {
+        margin-top: 35px;
+    }
+    #home-event .item-event .event-kategori {
+        margin-top: 20px;
+    }
+    #home-event .item-event .event-name {
+        font-weight: 600;
+        font-size: 14px;
+    }
+    #home-event .item-event .event-date,
+    #home-event .item-event .event-time {
+        font-size: 12px;
+    }
+    #home-event .item-event .event-cta a {
+        padding: 10px 20px !important;
+        font-size: 12px;
+        width: 100%;
+    }
+    .item-widget-ln {
+        margin-bottom: 20px;
+    }
+    .widget-office {
+        margin-top: 50px;
+    }
+    /* end */
+}
