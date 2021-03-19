@@ -434,8 +434,8 @@ body {
 #home-recent .card-recent {
     width: 100% !important;
     border-radius: 0 !important;
-    /* height: 450px; */
-    height: 155px;
+    height: 450px;
+    /* height: 155px; */
     background-position: center !important;
     background-size: cover !important;
 }
@@ -443,8 +443,8 @@ body {
 #home-recent .card-recent .card-recent-img {
     border-radius: 0 !important;
     background-position: center !important;
-    /* height: 275px; */
-    height: 0px;
+    height: 275px;
+    /* height: 0px; */
     background: transparent;
     background-size: cover !important;
 }
