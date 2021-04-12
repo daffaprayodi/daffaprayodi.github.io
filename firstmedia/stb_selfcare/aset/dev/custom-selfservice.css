@@ -204,6 +204,10 @@ MAIN CONTENT */
     font-weight: 600;
 }
 
+.nav-detail-pelanggan .content-profile {
+    padding-left: 20px;
+}
+
 
 /* PESAN */
 
@@ -230,8 +234,8 @@ hr.line-pesan {
 }
 
 .item-pesan .img-pesan {
-    width: 100%;
-    height: 35px;
+    width: 85%;
+    height: 55px;
     border-radius: 10px;
     background: rgb(240, 86, 112);
     background-size: cover !important;
@@ -239,21 +243,21 @@ hr.line-pesan {
 }
 
 .item-pesan .content-pesan .jdl-pesan {
-    font-size: 12px;
+    font-size: 16px;
     color: white;
     font-weight: 700;
     margin-bottom: 3px;
 }
 
 .item-pesan .content-pesan .desc-pesan {
-    font-size: 10px;
+    font-size: 14px;
     color: rgb(145, 145, 145) !important;
     font-weight: 300;
     margin-bottom: 8px;
 }
 
 .item-pesan .content-pesan .waktu-pesan {
-    font-size: 8px;
+    font-size: 10px;
     color: rgb(104, 104, 104) !important;
     font-weight: 400;
 }
@@ -268,7 +272,7 @@ hr.line-pesan {
 }
 
 .item-bantuan .item-bantuan-right {
-    margin-top: 10%;
+    margin-top: 5%;
     color: #969696;
     float: right;
     padding-right: 15%;
@@ -313,7 +317,7 @@ hr.line-pesan {
 }
 
 .item-bantuan .img-bantuan img {
-    width: 75%;
+    width: 100%;
     /* height: 35px; */
     border-radius: 10px;
     /* background: rgb(240, 86, 112); */
@@ -329,18 +333,19 @@ hr.line-pesan {
 }
 
 .item-bantuan .content-bantuan .cat-bantuan {
-    font-size: 8px;
+    font-size: 12px;
     letter-spacing: .5px;
     color: rgb(104, 104, 104) !important;
     text-transform: uppercase;
     font-weight: 400;
+    margin-bottom: 5px;
 }
 
 
 /* MODAL */
 
 .modal-qr-myfirstmedia .modal-title {
-    font-size: 10px;
+    font-size: 14px;
     text-align: center;
     font-weight: 500;
     letter-spacing: .2px;
@@ -349,7 +354,7 @@ hr.line-pesan {
 }
 
 .modal-qr-myfirstmedia .modal-title span {
-    font-size: 10px;
+    font-size: 14px;
     text-align: center;
     letter-spacing: .2px;
     font-weight: 800;
@@ -363,7 +368,7 @@ hr.line-pesan {
     border-radius: 100px !important;
     color: #AEAEAE !important;
     background: #ebebeb !important;
-    font-size: 10px;
+    font-size: 12px;
     text-transform: uppercase;
     font-weight: 500;
     border: none !important;
