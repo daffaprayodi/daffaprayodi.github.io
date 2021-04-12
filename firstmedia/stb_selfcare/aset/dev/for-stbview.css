@@ -1,0 +1,106 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        margin-left: 225px;
+    }
+    .container-main-content {
+        padding-right: 25px;
+    }
+    .navbar.fixed-left {
+        bottom: 0;
+        width: 225px;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+    .self-service-bar .navbar-brand {
+        font-weight: 700;
+        /* background: rgb(24, 24, 24); */
+        /* background: #181818; */
+        padding: 35px 20px 0px 20px;
+        width: 100%;
+        padding-left: 2rem;
+        font-size: 14px;
+    }
+    .main-content .content-page {
+        margin-top: 25px;
+    }
+    /* Navbar */
+    .navbar.fixed-left .navbar-collapse .navbar-nav .nav-item {
+        width: 100%;
+        line-height: 32px;
+    }
+    .self-service-bar .navbar-nav li.nav-item.nav-detail-pelanggan .nav-link.disabled {
+        line-height: 18px !important;
+        margin-bottom: 15px;
+    }
+    .nav-detail-pelanggan .profile {
+        margin-top: -25px;
+    }
+    .nav-detail-pelanggan .content-profile {
+        padding-left: 5px;
+    }
+    .img-profile img {
+        width: 25px;
+    }
+    .nav-detail-pelanggan .profile.content-profile .noacc {
+        font-size: 8px;
+        /* margin-top: 10px; */
+    }
+    .nav-detail-pelanggan .profile.content-profile .nama {
+        font-size: 12px;
+    }
+    .nav-detail-pelanggan .profile.content-profile .email {
+        font-size: 8px;
+    }
+    .self-service-bar .navbar-nav li.nav-item,
+    .self-service-bar .navbar-nav li.nav-item.active {
+        font-size: 12px;
+    }
+    /* main-content */
+    .main-content {
+        padding: 30px 30px;
+    }
+    .main-content .judul-page {
+        font-size: 18px;
+    }
+    .main-content .content-page .jdl-component {
+        font-size: 12px;
+        letter-spacing: .2px;
+    }
+    .main-content .content-page .sub-component {
+        font-size: 16px;
+    }
+    .main-content .content-page .sub-component span.ch-tv {
+        font-size: 14px;
+        padding: 2px 8px;
+    }
+    .main-content .content-page .component.component-layanan {
+        padding: 15px 20px;
+    }
+    /* ########### */
+    .info-tagihan {
+        padding: 13px 8px 8px 8px;
+        background: #0a090e;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        color: white;
+        font-size: 12px;
+    }
+    .scan-tagihan {
+        padding: 12px 12px 20px 12px;
+        background: white;
+        border-radius: 10px;
+    }
+    .text-qr {
+        margin-top: 10px;
+        font-size: 8px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .main-content .content-page .sub-component span.tgl-terakhir {
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .main-content .content-page .component {
+        margin-bottom: 15px;
+    }
+}

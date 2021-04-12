@@ -57,15 +57,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html"><i class="fas fa-bookmark"></i> &nbsp;Layanan Saya</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link active" href="tagihan.html"><i class="fas fa-file-invoice-dollar"></i> &nbsp;Tagihan</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="tagihan.html"><i class="fas fa-file-invoice-dollar"></i> &nbsp;Tagihan</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="pesan.html"><i class="fas fa-envelope"></i> &nbsp;Pesan</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="bantuan.html"><i class="fas fa-headset"></i> &nbsp;Bantuan</a>
+                <li class="nav-item active">
+                    <a class="nav-link active"><i class="fas fa-headset"></i> &nbsp;Bantuan</a>
                 </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link"><i class="fas fa-globe-asia"></i> &nbsp;Ganti Bahasa</a>
@@ -84,112 +84,71 @@
         <div class="main-content">
 
             <div class="judul-page">
-                Tagihan
+                Bantuan
             </div>
 
 
             <div class="content-page">
-                <div class="row">
 
-                    <div class="col-12">
-                        <div class="info-tagihan">
-                            <div class="row">
-                                <div class="col-1 text-center">
-                                    <i class="fas fa-bullhorn" style="color: #477eff"></i>
+                <!-- item-pesan -->
+                <div class="item-bantuan">
+                    <a data-toggle="modal" data-target="#modal-qr-myfirstmedia">
+                        <div class="row px-0">
+                            <div class="col-2">
+                                <div class="img-bantuan">
+                                    <img src="aset/img/Internet.png" alt="img-pesan">
                                 </div>
-                                <div class="col-11">
-                                    <marquee loop='-1'>Account Anda akan <b>Freeze</b> dalam waktu <b>10</b> hari lagi, silahkan lakukan pembayaran segera</marquee>
+                            </div>
+                            <div class="col-8 px-0">
+                                <div class="content-bantuan">
+                                    <div class="cat-bantuan">
+                                        Troubleshooting
+                                    </div>
+                                    <div class="jdl-bantuan">
+                                        Internet
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="item-bantuan-right">
+                                    <i class="fas fa-arrow-right"></i>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-
-                    <!-- ------------------------------------- -->
-
-                    <div class="col-4">
-
-
-                        <div class="scan-tagihan">
-                            <div class="qr">
-                                <img src="aset/img/qr.png" style="width: 100%;" alt="">
-                                <hr>
-                                <div class="text-qr">
-                                    Scan QR untuk melakukan pembayaran via OVO, Gopay, ShopeePay, dll
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="col-8">
-                        <div class="row">
-
-
-                            <div class="col-6">
-                                <div class="component">
-                                    <div class="jdl-component">
-                                        Total Tagihan
-                                    </div>
-                                    <div class="sub-component">
-                                        Rp. 872.200
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-6">
-                                <div class="component">
-                                    <div class="jdl-component">
-                                        Pembayaran Terakhir
-                                    </div>
-                                    <div class="sub-component">
-                                        Rp. 870.200 <br> <span class="tgl-terakhir"> (07 Juli 2021)</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-6">
-                                <div class="component">
-                                    <div class="jdl-component">
-                                        Status
-                                    </div>
-                                    <div class="sub-component">
-                                        Belum Lunas
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-
-                            <div class="col-6">
-                                <div class="component">
-                                    <div class="jdl-component">
-                                        Jatuh Tempo
-                                    </div>
-                                    <div class="sub-component">
-                                        22 Agustus 2021
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <!-- ----------------- -->
-
-
-
-
-
-
-
+                    </a>
                 </div>
+
+                <hr class="line-pesan">
+
+                <!-- item-pesan -->
+                <div class="item-bantuan">
+                    <a data-toggle="modal" data-target="#modal-qr-myfirstmedia">
+                        <div class="row px-0">
+                            <div class="col-2">
+                                <div class="img-bantuan">
+                                    <img src="aset/img/Television.png" alt="img-pesan">
+                                </div>
+                            </div>
+                            <div class="col-8 px-0">
+                                <div class="content-bantuan">
+                                    <div class="cat-bantuan">
+                                        Troubleshooting
+                                    </div>
+                                    <div class="jdl-bantuan">
+                                        TV Cable
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="item-bantuan-right">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
             </div>
 
         </div>
@@ -198,7 +157,34 @@
 
     </div>
 
+
+    <!-- Modal QR to MyFirstMedia -->
+    <div class="modal fade modal-qr-myfirstmedia" id="modal-qr-myfirstmedia" tabindex="-1" aria-labelledby="modal-qr-myfirstmedia" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-qr-myfirstmedia-label">Download <span>MyFirstMedia app</span> to run the troubleshooting feature</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <div class="img-qr-myfirstmedia">
+                        <img src="aset/img/qr.png" alt="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-close-modal-myfirstmedia" data-dismiss="modal">Ok to Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
+<script>
+    // $('#modal-qr-myfirstmedia').modal('show');
+</script>
 
 
 
