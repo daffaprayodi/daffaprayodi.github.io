@@ -1,0 +1,109 @@
+$fontFamily: "Rubik", sans-serif
+$color-neutral-500: #171717
+$color-primary-500: #EBA00F
+
+
+.dropdown-toggle::after
+    font-family: 'Material Symbols Outlined'
+    content: "\e5cf"
+    color: #171717
+    border: none
+    margin-left: 0
+    margin-right: 10px
+    vertical-align: -0.2em
+    font-size: calc(100% + 4px)
+    &:focus, &:hover
+        content: "\e5ce"
+        // transform: rotate(180deg)
+
+.shadow-none
+    box-shadow: none !important
+    
+.ln-nav
+    transition: .4s
+    .ln-nav-top
+        transition: all .3s ease-out
+        background: #F3F3F5
+        min-height: 36px
+        display: flex
+        align-items: center
+        .cta-business 
+            .dropdown-menu
+                border: none
+                box-shadow: 0px 11.4286px 40px -3.80952px rgba(24, 39, 75, 0.12)
+                .dropdown-item
+                    padding: 8px 12px
+                    &.dropdown-item-main
+                        padding: 8px 12px
+                        border: 1px solid #f3f4f5
+        .dropdown .btn, .cta-hubungiSales    
+            color: rgba(49,53,59,0.68)
+    .ln-nav-main
+        -webkit-transition: width 1s ease-in-out
+        -moz-transition: width 1s ease-in-out
+        -o-transition: width 1s ease-in-out
+        transition: width 1s ease-in-out
+        background: linear-gradient(180deg, #F3F3F5 0%, #F3F3F5 52.59%, rgba(255, 255, 255, 0) 52.6%)
+        &.ln-nav-main-whenScroll 
+            background: white
+            box-shadow: 0px 11.4286px 40px -3.80952px rgba(24, 39, 75, 0.12)
+            -webkit-transition: width 1s ease-in-out
+            -moz-transition: width 1s ease-in-out
+            -o-transition: width 1s ease-in-out
+            transition: width 1s ease-in-out
+            .navbar
+                padding: 0
+                box-shadow: none
+        .navbar
+            transition: .2s
+            height: 64px
+            padding: 0 20px
+            background: white
+            border-radius: 8px
+            box-shadow: 0px 11.4286px 40px -3.80952px rgba(24, 39, 75, 0.12)
+            .navbar-collapse, .navbar-nav, .nav-item
+                height: 100%
+            .logo 
+                img
+                    height: 36px
+            .navbar-nav
+                transition: .2s
+                .nav-item
+                    display: flex
+                    align-items: center
+                    border-bottom: 2px solid transparent
+                    padding: 0 4px
+                    .nav-link
+                        font-family: $fontFamily
+                        color: #171717
+                        font-weight: 500
+                    &:hover
+                        border-bottom: 2px solid $color-primary-500
+            .ln-nav-main--right
+                gap: 12px
+                .cta-search
+                    background: #f3f4f5
+                    border-radius: 50%
+                    width: 36px
+                    height: 36px
+                    display: flex
+                    text-align: center
+                    align-items: center
+                    text-decoration: none
+                    justify-content: center
+                    span
+                        color: #171717
+                        font-size: 20px
+                .free-quote
+                    border: 1px solid $color-primary-500
+                    border-radius: 8px
+                    display: inline-flex
+                    gap: 4px
+                    align-items: center
+                    padding: 4px 8px
+                    text-decoration: none
+                    img
+                        height: 24px
+                    span
+                        color: $color-primary-500
+                        font-weight: 500

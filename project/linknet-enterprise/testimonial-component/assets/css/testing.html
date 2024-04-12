@@ -1,0 +1,237 @@
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+var swiper = new Swiper(".swiper-listKeunggulan", {
+    slidesPerView: 1.25,
+    grid: {
+        rows: 2,
+        fill: "row",
+    },
+    spaceBetween: 12,
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: false,
+      },
+    freeMode: true,
+    breakpoints: {
+        499: {
+            grid: {
+                rows: 2,
+            },
+            slidesPerView: 1.75,
+            spaceBetween: 16,
+            freeMode: true,
+        },
+        750:{
+            grid: {
+                rows: 2,
+            },
+            slidesPerView: 2.25,
+        },
+        999: {
+            grid: {
+                rows: 2,
+            },
+            slidesPerView: 3,
+            freeMode: false,
+        }
+    }
+});
+
+// SwiperSlider OnPage Menu
+var swiper = new Swiper(".swiper-onpage-menu", {
+    slidesPerView: "auto",
+    spaceBetween: 12
+});
+
+// industry
+var swiper = new Swiper(".swiper-support", {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+     navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        499: {
+            spaceBetween: 20
+        },
+        999: {
+            spaceBetween: 35
+        }
+    }
+});
+
+
+$(document).ready(function () {
+    $.fn.isOnScreen = function () {
+        var win = $(window);
+        var viewport = {
+            top: win.scrollTop(),
+            left: win.scrollLeft()
+        };
+        viewport.right = viewport.left + win.width();
+        viewport.bottom = viewport.top + win.height();
+        var bounds = this.offset();
+        bounds.right = bounds.left + this.outerWidth();
+        bounds.bottom = bounds.top + this.outerHeight();
+        return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+    };
+
+    $(window).scroll(function () {
+        if ($('.onpage-menu').isOnScreen() == true) {
+            $(".ln-onpage-menu").appendTo(".onpage-menu");        
+        }
+        else{
+            $(".ln-onpage-menu").appendTo(".sticky-header");
+            $(".ln-onpage-menu").appendTo("body > nav > div.nav-business.nav-business-2 > div > div");
+        }
+    });
+});
+
+
+var sectionFormRegistration = document.getElementById("form-berlangganan");
+var sectionContent = document.getElementById("ln-section-excellence");
+
+$('.scrollToFormRegistration').click(function() {
+    // Start
+    if(sectionFormRegistration){
+        $('html, body').animate({
+            scrollTop: $('#form-berlangganan').offset().top -200
+        }, 500);
+        location.hash.replace('#', '');
+    } else {
+        window.open(window.location.origin+'#form-berlangganan','_self');
+    }
+    // End
+    location.hash.replace('#', '');
+});
+
+$('.scrollToContent').click(function() {
+    // Start
+    if(sectionContent){
+        $('html, body').animate({
+            scrollTop: $('#ln-section-excellence').offset().top -200
+        }, 500);
+        location.hash.replace('#', '');
+    } 
+    // End
+    location.hash.replace('#', '');
+});
+</script>
+
+<script>
+
+
+$(document).ready(function () {
+
+    var lang;
+
+    $(".dropdown-lang .dropdown-menu button").click(function(){
+        $(".dropdown-lang .dropdown-toggle").html('<span class="material-symbols-outlined">translate</span> '+$(this).val()+' <span class="material-symbols-outlined">expand_more</span>');
+        $('.dropdown-lang .dropdown-menu button').removeClass('active');
+        $(this).addClass('active');
+        
+        lang = $(this).val();
+
+
+        $.getJSON('/files/photos/shares/solutions/aws/json/content-data.json', function(data) { 
+                        console.log(data);
+
+       
+            if (lang == "EN"){
+                langEN();
+            } else if (lang == "ID"){
+                langID();
+            }
+
+            function langEN(){
+                $("#ln-section-hero h1").html(data.headline.en);
+                $("#ln-section-hero h3").html(data.subheadline.en);
+
+                // Component
+                $(".scrollToFormRegistration").html(data.component.buttonCTA.freeQuote.en);
+                $(".scrollToContent").html(data.component.buttonCTA.learnMore.en);
+                $(".callCS").html(data.component.buttonCTA.callCS.en);
+
+                $(".swiper-onpage-menu .swiper-slide:nth-child(1)").html(data.component.tabScroll[0].en);
+                $(".swiper-onpage-menu .swiper-slide:nth-child(2)").html(data.component.tabScroll[1].en);
+
+                // Information
+                $(".ln-section-information p:nth-child(1)").html(data.sectionInformation[0].en);
+                $(".ln-section-information p:nth-child(2)").html(data.sectionInformation[1].en);
+
+                // Why Link Net
+                $(".ln-section-why .ln-headline .subheadline").html(data.sectionWhy.subheadline.en);
+                $(".ln-section-why .ln-headline h2").html(data.sectionWhy.headline.en);
+
+                $(".ln-section-why p:nth-child(2)").html(data.sectionWhy.desc[0].en);
+                $(".ln-section-why p:nth-child(3)").html(data.sectionWhy.desc[1].en);
+
+
+                // Benefit
+                $(".ln-section-benefit .ln-headline h2").html(data.sectionBenefit.headline.en);
+
+                var itemBenefitNumbers = 0;
+                $(".itemBenefit").each(function() {
+                    itemBenefitNumbers = itemBenefitNumbers + 1;
+                    console.log(itemBenefitNumbers);
+                    $("#ln-section-benefit > div > div.ln-section-content > div > div:nth-child("+itemBenefitNumbers+") .title").html(data.sectionBenefit.itemBenefit[itemBenefitNumbers-1].title.en);
+                    $("#ln-section-benefit > div > div.ln-section-content > div > div:nth-child("+itemBenefitNumbers+") .description").html(data.sectionBenefit.itemBenefit[itemBenefitNumbers-1].desc.en);
+                });
+
+                // SalesPitch
+                $(".ln-section-salesPitch h2").html(data.sectionSalesPitch.headline.en);
+                $(".ln-section-salesPitch p").html(data.sectionSalesPitch.desc.en);
+            }
+        
+            function langID(){
+                $("#ln-section-hero h1").html(data.headline.id);
+                $("#ln-section-hero h3").html(data.subheadline.id);
+
+                // Component
+                $(".scrollToFormRegistration").html(data.component.buttonCTA.freeQuote.id);
+                $(".scrollToContent").html(data.component.buttonCTA.learnMore.id);
+                $(".callCS").html(data.component.buttonCTA.callCS.id);
+
+                $(".swiper-onpage-menu .swiper-slide:nth-child(1)").html(data.component.tabScroll[0].id);
+                $(".swiper-onpage-menu .swiper-slide:nth-child(2)").html(data.component.tabScroll[1].id);
+
+                // Information
+                $(".ln-section-information p:nth-child(1)").html(data.sectionInformation[0].id);
+                $(".ln-section-information p:nth-child(2)").html(data.sectionInformation[1].id);
+
+                // Why Link Net
+                $(".ln-section-why .ln-headline .subheadline").html(data.sectionWhy.subheadline.id);
+                $(".ln-section-why .ln-headline h2").html(data.sectionWhy.headline.id);
+
+                $(".ln-section-why p:nth-child(2)").html(data.sectionWhy.desc[0].id);
+                $(".ln-section-why p:nth-child(3)").html(data.sectionWhy.desc[1].id);
+
+
+                // Benefit
+                $(".ln-section-benefit .ln-headline h2").html(data.sectionBenefit.headline.id);
+
+                var itemBenefitNumbers = 0;
+                $(".itemBenefit").each(function() {
+                    itemBenefitNumbers = itemBenefitNumbers + 1;
+                    console.log(itemBenefitNumbers);
+                    $("#ln-section-benefit > div > div.ln-section-content > div > div:nth-child("+itemBenefitNumbers+") .title").html(data.sectionBenefit.itemBenefit[itemBenefitNumbers-1].title.id);
+                    $("#ln-section-benefit > div > div.ln-section-content > div > div:nth-child("+itemBenefitNumbers+") .description").html(data.sectionBenefit.itemBenefit[itemBenefitNumbers-1].desc.id);
+                });
+
+                // SalesPitch
+                $(".ln-section-salesPitch h2").html(data.sectionSalesPitch.headline.id);
+                $(".ln-section-salesPitch p").html(data.sectionSalesPitch.desc.id);
+            }
+
+        // End
+        });
+
+    });
+
+    
+
+    
+});
+</script>

@@ -1,0 +1,162 @@
+{
+    "headline": {
+      "id": "Solusi Kenyamaan berbisnis dan Keamanan Data",
+      "en": "Business Convenience and Data Security Solutions"
+    },
+    "subheadline": {
+      "id": "Akses layanan AWS dengan koneksi berkecepatan tinggi untuk efisienkan bisnis Anda",
+      "en": "AWS services access with a high-speed connection to boost your business growth further more"
+    },
+    "component": {
+      "buttonCTA": {
+        "freeQuote": {
+          "id": "Dapatkan Penawaran",
+          "en": "Get a Free Quote"
+        },
+        "learnMore": {
+          "id": "<span class='material-symbols-outlined'>arrow_downward</span> Pelajari produk",
+          "en": "<span class='material-symbols-outlined'>arrow_downward</span> Learn More"
+        },
+        "callCS": {
+          "id": "Live Chat dengan Agent",
+          "en": "Live Chat with Agent"
+        },
+        "imageZoom": {
+          "id": "Perbesar Gambar",
+          "en": "Enlarge Image"
+        }
+      },
+      "tabScroll": [
+        {
+          "id": "Kenapa Link Net",
+          "en": "Why Link Net"
+        },
+        {
+          "id": "Manfaat",
+          "en": "Benefit"
+        },
+        {
+          "id": "Topologi",
+          "en": "Topology"
+        }
+      ]
+    },
+    "sectionInformation": [
+      {
+          "id": "Layanan Link Net Cloud Connect memungkinkan Anda mengakses layanan AWS Cloud langsung dari infrastruktur lokal. Dengan koneksi kecepatan tinggi melalui jaringan fiber optic, bandwidth & kecepatan yang elastis sesuai kebutuhan Anda.",
+          "en": "The Link Net Cloud Connect service enables you to access AWS Cloud services directly from your existing local infrastructure. This service provides high-velocity connectivity facilitated by an advanced fiber-optic network,  delivering elastic bandwidth and speed tailored to your specific requirements. This premium service is your ticket to unparalleled cloud connectivity and efficiency."
+      },
+      {
+        "id": "Nikmati akses AWS Cloud berkecepatan tinggi, stabil dan aman, serta biaya yang lebih efisien, dengan layanan Link Net Cloud Connect.",
+        "en": "Experience high-speed, stable, and highly secure access to AWS Cloud at a cost-effective rate through the Link Net Cloud Connect service."
+      }
+    ],
+    "sectionWhy": {
+      "subheadline": {
+        "id": "KENAPA LINK NET",
+        "en": "WHY LINK NET"
+      },
+      "headline": {
+        "id": "Lebih dari <span>3000 pelanggan enterprise</span> telah terhubung melalui Link Net Network",
+        "en": "Link Net boasts a clientele of over <span>3000 enterprise customers</span>, all connected through the robust Link&nbsp;Net Network"
+      },
+      "desc": [
+        {
+          "id": "Jaringan kami memberikan layanan terbaik untuk menyediakan private line & internet yang aman untuk berbagai sektor dari perhotelan, operator telekomunikasi, pemerintah, perbankan, hingga mitra-mitra di luar negeri.",
+          "en": "Our network consistently delivers best-in-class services, providing secure private lines and internet to a diverse range of sectors; from hospitality, telecommunications operators, government agencies, banking, to partners abroad."
+        },
+        {
+          "id": "Kami telah melayani berbagai macam perusahaan di Indonesia  dan menjadi mitra setia dalam transformasi digital selama lebih dari 20 tahun.",
+          "en": "We have had the privilege of serving a vast array of companies in Indonesia and have been their steadfast partner in digital transformation for over 20 years.  We're not just a service, we're a long-term partner."
+        }
+      ]
+    },
+    "sectionBenefit": {
+      "headline": {
+        "id": "Manfaat dari Cloud Connect",
+        "en": "Cloud Connect Benefits"
+      },
+      "itemBenefit": [
+        {
+          "title": {
+            "id": "Koneksi Berkecepatan Tinggi & Stabil",
+            "en": "High-speed & stable connection"
+          },
+          "desc": {
+            "id": "Melalui fiber optic dapat membuat komunikasi data lebih cepat.",
+            "en": "Through fiber optic technology accelerates data communication"
+          }
+        },
+        {
+          "title": {
+            "id": "Latensi Rendah",
+            "en": "Low latency"
+          },
+          "desc": {
+            "id": "Waktu transfer data lebih singkat dan mengurangi risiko kemacetan jaringan.",
+            "en": "Shorter data transfer times reduce the risk of network congestion."
+          }
+        },
+        {
+          "title": {
+            "id": "Meningkatkan Kinerja Aplikasi",
+            "en": "Enhanced application performance"
+          },
+          "desc": {
+            "id": "Dengan menghubungkan langsung ke AWS dan mem-bypass atau melewati jaringan internet publik.",
+            "en": "By connecting directly to AWS and bypassing the public internet."
+          }
+        },
+        {
+          "title": {
+            "id": "Menghemat Biaya Transfer Data",
+            "en": "Cost savings on data transfer"
+          },
+          "desc": {
+            "id": "Biaya akses jaringan lokal ke Amazon (seperti S3 atau EC2) jauh lebih murah.",
+            "en": "Network access costs to Amazon services (such as S3 or EC2) are significantly lower."
+          }
+        },
+        {
+          "title": {
+            "id": "Bandwidth Elastis",
+            "en": "Elastic bandwidth"
+          },
+          "desc": {
+            "id": "Memungkinkan untuk diatur sesuai kebutuhan, baik menggunakan koneksi <i>bandwidth</i> yang lebih tinggi, atau dengan membuat banyak koneksi sekaligus.",
+            "en": "Offers the flexibility to adjust as per your needs, whether by utilizing a higher bandwidth connection or establishing multiple connections simultaneously."
+          }
+        },
+        {
+          "title": {
+            "id": "Meningkatkan Keamanan Data",
+            "en": "Increased data security"
+          },
+          "desc": {
+            "id": "Karena hanya melalui jaringan lokal dan AWS dengan beragam pilihan enkripsi, dan tanpa melalui jaringan internet publik.",
+            "en": "As the connection is exclusively through your local network and AWS with various encryption options, it does not pass through the public internet."
+          }
+        }
+      ]
+    },
+    "sectionTopology": {
+      "subheadline": {
+        "id": "TOPOLOGI",
+        "en": "TOPOLOGY"
+      },
+      "headline": {
+        "id": "Topologi yang digunakan oleh Link Net Cloud Connect",
+        "en": "The topology used by Link Net Cloud Connect"
+      }
+    },
+    "sectionSalesPitch": {
+      "headline": {
+        "id": "Nikmati akses layanan AWS Cloud bebas hambatan, keamanan data yang terjamin, dan biaya lebih efisien, dengan Link Net Cloud Connect",
+        "en": "Experience the uninterrupted access to AWS Cloud services, assured data security, and increased cost-efficiency with Link Net Cloud Connect."
+      },
+      "desc": {
+        "id": "Wujudkan <b>#TransformasiPASTI</b> dengan berbagai produk dan layanan yang unggul dari Link Net",
+        "en": "Realize <b>#TransformasiPASTI</b> with superior products and services from Link Net"
+      }
+    }
+}

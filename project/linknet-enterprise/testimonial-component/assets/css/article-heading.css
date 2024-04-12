@@ -1,0 +1,137 @@
+/* 
+    // Colors //
+*/
+
+:root{
+
+    /* Setting */
+    --fontFamily-main: "Source Sans Pro", sans-serif;
+    --fontFamily-secondary: "Poppins", sans-serif;
+
+    /* Linear */
+    --ln-linear-x1: 4px;
+    --ln-linear-x2: 8px;
+    --ln-linear-x3: 12px;
+    --ln-linear-x4: 16px;
+    --ln-linear-x5: 20px;
+    --ln-linear-x6: 24px;
+    --ln-linear-x7: 28px;
+    --ln-linear-x8: 32px;
+    --ln-linear-x9: 36px;
+    --ln-linear-x10: 40px;
+    --ln-linear-x12: 48px;
+    --ln-linear-x14: 56px;
+    --ln-linear-x16: 64px;
+
+    /* Border Radius */
+    --ln-cornerRadius-medium: var(--ln-linear-x2);
+    --ln-cornerRadius-large: var(--ln-linear-x3);
+    --ln-cornerRadius-xtraLarge: var(--ln-linear-x4);
+}
+
+/* 
+    ↳ Typography: Heading
+*/
+
+.font-weight-demi{
+    font-weight: 500 !important;
+}
+
+.font-weight-bold{
+    font-weight: 600 !important;
+}
+
+.shadow-0{
+    box-shadow: none !important;
+}
+
+h1, 
+.ln-text-heading-hero,
+.article-detail .article-detail-text h1{
+    font-size: 36px;
+    line-height: 44px;
+}
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+    .ln-text-heading-hero,
+    .article-detail .article-detail-text h1{
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+h2,
+.ln-text-heading-xtraLarge,
+.article-detail .article-detail-text h2{
+    font-size: 36px;
+    line-height: 46px;
+}
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+    .ln-text-heading-xtraLarge,
+    .article-detail .article-detail-text h2{
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+h3,
+.ln-text-heading-large,
+.article-detail .article-detail-text h3{
+    font-size: 24px;
+    line-height: 34px;
+}
+
+h4,
+.ln-text-heading-xtraMedium,
+.article-detail .article-detail-text h4{
+    font-size: 18px;
+    line-height: 26px;
+}
+
+h5,
+.ln-text-heading-medium,
+.article-detail .article-detail-text h5{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.ln-text-heading-xtraSmall{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+h6,
+.ln-text-heading-small,
+.article-detail .article-detail-text h6{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.ln-text-heading-tiny{
+    font-size: 12px;
+    line-height: 22px;
+}
+
+/* 
+    ↳ Typography: Body
+*/
+
+.ln-text-body-xtraMedium{
+    font-size: 18px;
+    line-height: 28px;
+}
+
+p,
+.ln-text-body-medium{
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.ln-text-body-small{
+    font-size: 14px;
+    line-height: 24px;
+}

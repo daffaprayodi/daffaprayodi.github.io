@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap')
+
+:root 
+    --font-family: 'Inter', sans-serif 
+    --color-yellow900: #966A0E 
+    --color-yellow800: #966A0E 
+    --color-yellow700: #C88D13 
+    --color-yellow600: #E19E16 
+    --color-yellow500: #FAB018 
+    --color-yellow400: #FBC046 
+    --color-yellow300: #FCD074 
+    --color-yellow200: #FDDFA3 
+    --color-yellow100: #FEEFD1 
+    --color-yellow50: #FFF7E8 
+    --color-navy900: #090A0E 
+    --color-navy800: #12141B 
+    --color-navy700: #1B1E29 
+    --color-navy600: #242836 
+    --color-navy500: #2D3244 
+    --color-navy400: #575B69 
+    --color-navy300: #81848F 
+    --color-navy200: #ABADB4 
+    --color-navy100: #D5D6DA 
+    --color-navy50: #EAEBEC 
+    --color-neutral900: #212121 
+    --color-neutral800: #373737 
+    --color-neutral700: #4D4D4D 
+    --color-neutral600: #646464 
+    --color-neutral500: #7A7A7A 
+    --color-neutral400: #909090 
+    --color-neutral300: #A6A6A6 
+    --color-neutral200: #BCBCBC 
+    --color-neutral100: #D3D3D3 
+    --color-neutral50: #E9E9E9 
+    --color-green900: #0C1F11 
+    --color-green800: #193F22 
+    --color-green700: #255E34 
+    --color-green600: #327E45 
+    --color-green500: #3E9D56 
+    --color-green400: #65B178 
+    --color-green300: #8BC49A 
+    --color-green200: #B2D8BB 
+    --color-green100: #D8EBDD 
+    --color-green50: #ECF5EE 
+    --color-red900: #2C0608 
+    --color-red800: #590C0F 
+    --color-red700: #851317 
+    --color-red600: #A11A31 
+    --color-red500: #DE1F26 
+    --color-red400: #E54C51 
+    --color-red300: #EB797D 
+    --color-red200: #F2A5A8 
+    --color-red100: #F8D2D4 
+    --color-red50: #FCE9E9 
+
+    /* Linear */
+    --linear-x1: 4px
+    --linear-x2: 8px
+    --linear-x3: 12px
+    --linear-x4: 16px
+    --linear-x5: 20px
+    --linear-x6: 24px
+    --linear-x7: 28px
+    --linear-x8: 32px
+    --linear-x9: 36px
+    --linear-x10: 40px
+    --linear-x12: 48px
+    --linear-x14: 56px
+    --linear-x16: 64px
+
+
+    // Border Radius
+    --cornerRadius-m: var(--linear-x2)
+    --cornerRadius-l: var(--linear-x3)
+    --cornerRadius-xl: var(--linear-x4)
+
+    --font-bold: 800
+    --font-demi: 600
+    --font-normal: 400
+
+// 
+//  Font Weight
+//
+
+.ln-font-bold
+    font-weight: var(--font-bold) !important
+
+.ln-font-demi
+    font-weight: var(--font-demi) !important
+
+.ln-font-normal
+    font-weight: var(--font-normal) !important
+
+// 
+//  Typography
+//
+
+// -> Typography / Heading
+
+.ln-text-heading-hero
+    font-size: 36px
+    line-height: 48px
+    // Mobile
+    @media (min-width: 320px) and (max-width: 480px) 
+        font-size: 28px
+        line-height: 40px
+
+.ln-text-heading-xtraLarge
+    font-size: 28px
+    line-height: 40px
+    @media (min-width: 320px) and (max-width: 480px) 
+        font-size: 24px
+        line-height: 36px
+
+.ln-text-heading-large
+    font-size: 24px
+    line-height: 34px
+
+.ln-text-heading-xtraMedium
+    font-size: 18px
+    line-height: 28px
+
+.ln-text-heading-medium
+    font-size: 16px
+    line-height: 26px
+
+.ln-text-heading-small
+    font-size: 14px
+    line-height: 22px
+
+.ln-text-heading-tiny
+    font-size: 12px
+    line-height: 20px
+
+// Typography -> Body
+
+.ln-text-body-medium
+    font-size: 16px
+    line-height: 26px
+
+.ln-text-body-small
+    font-size: 14px
+    line-height: 22px
+
+
+// Typography -> Caption
+.ln-text-caption-small
+    font-size: 14px
+    line-height: 22px
+
+.ln-text-caption-tiny
+    font-size: 12px
+    line-height: 20px
+
+
+// 
+//  Button
+//
+
+.ln-button
+    padding: 10px 16px
+    border-radius: 8px !important
+    font-size: 16px
+    font-weight: var(--font-demi) !important
+    letter-spacing: 0 !important    
+    text-align: center
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    gap: 8px
+    span
+        font-size: 18px
+    img
+        width: 16px
+
+    &.ln-button-primary
+        background: var(--color-yellow500)
+        color: var(--color-neutral900)
+        &:hover
+            background: var(--color-yellow600)
+        &:focus
+            background: var(--color-yellow700)
+
+    &.ln-button-secondary
+        background: #fff
+        color: var(--color-neutral900)
+        border: 1px solid #ebebeb
+        &:hover
+            border-color: var(--color-yellow600)
+        &:focus
+            border-color: var(--color-yellow700)
+
+    &.ln-button-white
+        background: #fff
+        color: var(--color-neutral900)
+        &:hover
+            background: var(--color-neutral50)
+        &:focus
+            background: var(--color-neutral100)
+        
+    &.ln-button-plain-white
+        background: none
+        color: #fff
+
+    &.ln-button-plain-black
+        background: none
+        color: var(--color-neutral900)
