@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<title>QR Code Generator</title>
+		<script src="dist/easy.qrcode.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+			}
+			
+			#header{
+				text-align: left;
+				margin: 0;
+				line-height: 80px;
+				background-color: #007bff;
+				color: #fff;
+				padding-left: 20px;
+				font-size: 36px;
+			}
+			
+			#header a{color: #FFFF00;}
+			#header a:hover{color: #FF9933;}
+			#container {
+				width: 1030px;
+				margin: 10px auto;
+			}
+			#container .qr canvas {
+				width: 300px;
+				height: 300px;
+			}
+
+			.imgblock {
+				margin: 10px 0;
+				text-align: center;
+				float: left;
+				min-height: 420px;
+				border-bottom: 1px solid #B4B7B4;
+			}
+
+			.qr table {
+				
+			}
+
+			.title {
+				font-size: 15px;
+				font-weight: bold;
+				color: #fff;
+				text-align: center;
+				width: 330px;
+				margin: 10px 5px;
+				height: 60px;
+				background-color: #0084C6;
+				line-height: 60px;
+			}
+		
+			#footer {
+				margin-top: 20px;
+				border-top: 1px solid gainsboro;
+				line-height: 40px;
+				clear: both;
+				text-align: center;
+			}
+
+			#footer a {
+				color: #0084C6;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="form-group">
+				<h2 class="text-center mt-4">QR Generator Code</h2>
+				<input type="text" class="form-control" id="input_link" aria-describedby="input_link" placeholder="Enter URL">
+			</div>
+			<div class="form-group">
+				<input type="radio" name="pilih_logo" id="linknet" class="pilih_logo" value="https://www.firstmedia.com/files/qr-ln.png"> Enterprise
+				<input type="radio" name="pilih_logo" id="firstmedia" class="pilih_logo" value="img/fm.png"> FM
+			</div>
+			<div class="form-group">
+				<button class="btn btn-danger" onclick="inputLink()">Submit</button>
+			</div>
+		</div>
+
+		<div id="container"></div>
+		
+
+		
+<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+	</body>
+
+</html>
+<script type="text/template" id="qrcodeTpl">
+			<div class="imgblock">
+				<div class="titles"></div>
+				<div class="qr" id="qrcode_{i}"></div>
+			</div>
+		</script>
+		<script type="text/javascript">
+			function inputLink(){
+				var getUrl = document.getElementById("input_link").value;
+				var getEnterprise = document.getElementById("linknet").value;
+				var getFm = document.getElementById("firstmedia").value;
+				
+				var getLogo = document.getElementsByName("pilih_logo");
+				for(i=0;i<getLogo.length;i++){
+					if(getLogo[i].checked){
+						if(getLogo[i].value==="https://www.firstmedia.com/files/qr-ln.png"){
+							var demoParams = [
+							{
+								config: {
+									text: getUrl,
+									width: 1080,
+									height: 1080,
+									quietZone: 0,
+									colorDark: "#2D3244",
+									colorLight: "#ffffff",
+									quietZone: 15,
+									quietZoneColor: '#fff',
+									logoBackgroundColor: '#ffffff', // Logo backgroud color, Invalid when `logBgTransparent` is true; default is '#ffffff'
+									//PI: '#f55066',
+									correctLevel: QRCode.CorrectLevel.H, // L, M, Q, H
+									logo:"https://www.firstmedia.com/files/qr-ln.png"
+								}
+							}
+						]
+						}else{
+							var demoParams = [
+								{
+									config: {
+										text: getUrl,
+										width: 1080,
+										height: 1080,
+										quietZone: 0,
+										colorDark: "#0e4194",
+										colorLight: "#ffffff",
+										quietZone: 15,
+										quietZoneColor: '#fff',
+										logoBackgroundColor: '#ffffff', // Logo backgroud color, Invalid when `logBgTransparent` is true; default is '#ffffff'
+										//PI: '#f55066',
+										correctLevel: QRCode.CorrectLevel.H, // L, M, Q, H
+										logo:"img/fm.png"
+									}
+								}
+							]
+						}
+					}
+				}
+			var qrcodeTpl = document.getElementById("qrcodeTpl").innerHTML;
+			var container = document.getElementById('container');
+
+			for (var i = 0; i < demoParams.length; i++) {
+				var qrcodeHTML = qrcodeTpl.replace(/\{title\}/, demoParams[i].title).replace(/{i}/, i);
+				container.innerHTML=qrcodeHTML;
+			}
+			for (var i = 0; i < demoParams.length; i++) {
+				 var t=new QRCode(document.getElementById("qrcode_"+i), demoParams[i].config);
+			}
+		}
+			
+
+		</script>

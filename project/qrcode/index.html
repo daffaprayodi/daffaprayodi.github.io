@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>First Media - QR Code Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/general.css">
+
+  </head>
+  <body>
+   
+    <div class="qr-content">
+      <div class="container">
+
+        <!-- QR Card Generator -->
+        <div class="qr--card mt-5 mb-3">
+            <img src="img/icon-qr.png" alt="Icon" style="width: 44px;" class="mb-2">
+            <h1 class="headline mb-3">Buat QR Code Anda Sekarang</h1>
+
+            <div class="form-group qr--segment-picker d-flex mb-3">
+              <label class="qr--input-radio">
+                <input type="radio" name="qr-value" class="qr--input-radio-element" value="firstmedia" checked />
+                  <div class="qr--radio-card">
+                    <img class="qr--input-logo" src="img/icon-qr-fm.png" alt="First Media">
+                  </div>
+              </label>
+              <label class="qr--input-radio">
+                <input type="radio" name="qr-value" class="qr--input-radio-element" value="xlsatu" />
+                  <div class="qr--radio-card">
+                    <img class="qr--input-logo" src="img/xlsatu.webp" alt="XL Satu">
+                  </div>
+              </label>
+            </div>
+
+            <div class="form-group input-url mb-3">
+                <img class="icon-input-left" src="img/icon-url.png" alt="Icon URL">
+                <input id="input_link" type="text" class="form-control form-control-url" placeholder="https://.." aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <button class="btn btn-primary w-100" onclick="inputLink()">Buat QR Code</button>
+        </div>
+        <!-- End://QR Card Generator -->
+
+        <!-- QR -->
+        <div class="qr--card mb-5 d-none" id="qr--result-card">
+          <h1 class="headline mb-3">QR Result</h1>
+          <div class="alert qr--alert alert-warning d-flex align-items-center" role="alert">
+            <!-- <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg> -->
+            <div>
+                Pastikan untuk melakukan testing melalui kamera smartphone terlebih dahulu sebelum mendownload & menyebarkan QR.
+            </div>
+          </div>
+
+          <div id="qr-result"></div>
+
+
+          <div class="alert qr--alert alert-light" role="alert">
+            QR Diarahkan ke <span id="qr-link-direct" style="font-weight: bold;">sini</span>
+          </div>
+          <!-- <button class="btn btn-primary-outline w-100" onclick="inputLink()">Buat Ulang QR Code</button> -->
+        </div>
+        <!-- /QR -->
+
+      </div>
+    </div>
+
+		<script src="dist/easy.qrcode.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="dist/easy.qrcode.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/template" id="qrcodeTpl"> 
+      <div class="imgblock">
+        <div class="titles"></div>
+        <div class="qr" id="qrcode_{i}"></div>
+      </div>
+    </script>
+
+    <script src="dist/js/scripts.js"></script>
+
+
+  </body>
+</html>
